@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D85612EA2424AB55001EEC5D /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85612E92424AB55001EEC5D /* Fonts.swift */; };
 		D8A48CCB23BBAF6700A4E1BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A48CCA23BBAF6700A4E1BF /* AppDelegate.swift */; };
 		D8A48CCD23BBAF6700A4E1BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A48CCC23BBAF6700A4E1BF /* SceneDelegate.swift */; };
 		D8A48CCF23BBAF6700A4E1BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A48CCE23BBAF6700A4E1BF /* ContentView.swift */; };
 		D8A48CD123BBAF6800A4E1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A48CD023BBAF6800A4E1BF /* Assets.xcassets */; };
 		D8A48CD423BBAF6800A4E1BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A48CD323BBAF6800A4E1BF /* Preview Assets.xcassets */; };
 		D8A48CD723BBAF6800A4E1BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A48CD523BBAF6800A4E1BF /* LaunchScreen.storyboard */; };
+		D8BC3EB9241891E2004C5B4F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC3EB8241891E2004C5B4F /* Colors.swift */; };
+		D8BC3EBB2418BB39004C5B4F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC3EBA2418BB39004C5B4F /* Helper.swift */; };
+		D8BC3EBD2418BB74004C5B4F /* airliners.json in Resources */ = {isa = PBXBuildFile; fileRef = D8BC3EBC2418BB74004C5B4F /* airliners.json */; };
+		D8BC3EBF2418BC96004C5B4F /* Airliner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8BC3EBE2418BC96004C5B4F /* Airliner.swift */; };
+		D8D9257624152FA80087ADD6 /* AirlinerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8D9257524152FA80087ADD6 /* AirlinerRow.swift */; };
+		D8F6F7B223CA2E9F00385739 /* AirlinerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F6F7B123CA2E9F00385739 /* AirlinerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D85612E92424AB55001EEC5D /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		D8A48CC723BBAF6700A4E1BF /* TheAirliners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheAirliners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A48CCA23BBAF6700A4E1BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A48CCC23BBAF6700A4E1BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		D8A48CD323BBAF6800A4E1BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D8A48CD623BBAF6800A4E1BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8A48CD823BBAF6800A4E1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8BC3EB8241891E2004C5B4F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D8BC3EBA2418BB39004C5B4F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		D8BC3EBC2418BB74004C5B4F /* airliners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airliners.json; sourceTree = "<group>"; };
+		D8BC3EBE2418BC96004C5B4F /* Airliner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airliner.swift; sourceTree = "<group>"; };
+		D8D9257524152FA80087ADD6 /* AirlinerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinerRow.swift; sourceTree = "<group>"; };
+		D8F6F7B123CA2E9F00385739 /* AirlinerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirlinerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +73,13 @@
 				D8A48CCA23BBAF6700A4E1BF /* AppDelegate.swift */,
 				D8A48CCC23BBAF6700A4E1BF /* SceneDelegate.swift */,
 				D8A48CCE23BBAF6700A4E1BF /* ContentView.swift */,
+				D8D9257524152FA80087ADD6 /* AirlinerRow.swift */,
+				D8F6F7B123CA2E9F00385739 /* AirlinerDetailView.swift */,
+				D8BC3EB8241891E2004C5B4F /* Colors.swift */,
+				D85612E92424AB55001EEC5D /* Fonts.swift */,
+				D8BC3EBA2418BB39004C5B4F /* Helper.swift */,
+				D8BC3EBE2418BC96004C5B4F /* Airliner.swift */,
+				D8BC3EBC2418BB74004C5B4F /* airliners.json */,
 				D8A48CD023BBAF6800A4E1BF /* Assets.xcassets */,
 				D8A48CD523BBAF6800A4E1BF /* LaunchScreen.storyboard */,
 				D8A48CD823BBAF6800A4E1BF /* Info.plist */,
@@ -136,6 +157,7 @@
 				D8A48CD723BBAF6800A4E1BF /* LaunchScreen.storyboard in Resources */,
 				D8A48CD423BBAF6800A4E1BF /* Preview Assets.xcassets in Resources */,
 				D8A48CD123BBAF6800A4E1BF /* Assets.xcassets in Resources */,
+				D8BC3EBD2418BB74004C5B4F /* airliners.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +169,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A48CCB23BBAF6700A4E1BF /* AppDelegate.swift in Sources */,
+				D8BC3EBB2418BB39004C5B4F /* Helper.swift in Sources */,
+				D8BC3EB9241891E2004C5B4F /* Colors.swift in Sources */,
 				D8A48CCD23BBAF6700A4E1BF /* SceneDelegate.swift in Sources */,
 				D8A48CCF23BBAF6700A4E1BF /* ContentView.swift in Sources */,
+				D8F6F7B223CA2E9F00385739 /* AirlinerDetailView.swift in Sources */,
+				D8D9257624152FA80087ADD6 /* AirlinerRow.swift in Sources */,
+				D85612EA2424AB55001EEC5D /* Fonts.swift in Sources */,
+				D8BC3EBF2418BC96004C5B4F /* Airliner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
