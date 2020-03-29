@@ -9,16 +9,20 @@
 import SwiftUI
 
 struct AirlinerRow: View {
-    let airliner: Airliner
+    private let viewModel: AirlinerRowViewModel
+    
+    init(viewModel: AirlinerRowViewModel) {
+        self.viewModel = viewModel
+    }
 
     var body: some View {
         HStack(spacing: 14) {
             VStack(alignment: .leading, spacing: 6) {
-                Text(airliner.boeingModel)
+                Text(viewModel.model)
                     .font(.caption)
                     .foregroundColor(.primary)
 
-                Text(airliner.shortInfo)
+                Text(viewModel.shortInfo)
                     .lineLimit(2)
                     .font(.body2)
                     .foregroundColor(.primary)
@@ -26,7 +30,7 @@ struct AirlinerRow: View {
             
             Spacer()
             
-            Image(airliner.mediaFile)
+            Image(viewModel.mediaFile)
                 .resizable()
                 .frame(width: 64, height: 64)
                 .cornerRadius(8)
@@ -36,18 +40,11 @@ struct AirlinerRow: View {
         .background(Color.white)
         .cornerRadius(8)
         .shadow(color: Color.shadowed, radius: 5, x: 0, y: 3)
-
-    }
-}
-
-fileprivate extension Airliner {
-    var boeingModel: String {
-        "The Boeing \(lineNumber)"
     }
 }
 
 struct AirlinerRow_Previews: PreviewProvider {
     static var previews: some View {
-        AirlinerRow(airliner: Airliner.example)
+        AirlinerRow(viewModel: AirlinerRowViewModel(airliner: Airliner.example))
     }
 }
