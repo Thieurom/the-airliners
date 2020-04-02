@@ -20,15 +20,15 @@ struct DetailRow: View {
             HStack {
                 Text(viewModel.title)
                     .lineLimit(1)
-                    .font(.subtitle)
-                    .foregroundColor(.primary)
+                    .font(.body)
+                    .foregroundColor(.secondary)
 
                 Spacer()
 
                 Text(viewModel.description)
                     .lineLimit(1)
-                    .font(.body2)
-                    .foregroundColor(.secondary)
+                    .font(.body)
+                    .foregroundColor(.primary)
             }
 
             VStack {

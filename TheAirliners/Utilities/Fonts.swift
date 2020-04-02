@@ -11,7 +11,5 @@ import SwiftUI
 extension Font {
     static let headline: Font = .system(size: 22, weight: .semibold, design: .default)
     static let caption: Font = .system(size: 17, weight: .semibold, design: .default)
-    static let body1: Font = .system(size: 18, weight: .regular, design: .default)
-    static let body2: Font = .system(size: 17, weight: .regular, design: .default)
-    static let subtitle: Font = .system(size: 16, weight: .medium, design: .default) 
+    static let body: Font = .system(size: 16, weight: .regular, design: .default)
 }

@@ -24,8 +24,8 @@ struct AirlinerRow: View {
 
                 Text(viewModel.shortInfo)
                     .lineLimit(2)
-                    .font(.body2)
-                    .foregroundColor(.primary)
+                    .font(.body)
+                    .foregroundColor(.secondary)
             }
             
             Spacer()

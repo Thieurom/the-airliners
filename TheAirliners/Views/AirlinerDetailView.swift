@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AirlinerDetailView: View {
     @Environment(\.presentationMode) var presentationMode
+    @State private var isShowingFullDescription = false
     private let viewModel: AirlinerDetailViewModel
     
     init(viewModel: AirlinerDetailViewModel) {
@@ -30,17 +31,35 @@ struct AirlinerDetailView: View {
             .listRowInsets(EdgeInsets())
 
             Section {
-                Text(viewModel.description)
-                    .font(.body1)
-                    .foregroundColor(.secondary)
-                    .listRowInsets(EdgeInsets(top: 8, leading: 22, bottom: 0, trailing: 22))
+                ZStack(alignment: .bottomTrailing) {
+                    Text(viewModel.description)
+                        .lineLimit(self.isShowingFullDescription ? nil : 6)
+                        .font(.body)
+                        .foregroundColor(.primary)
+                        .animation(.easeInOut(duration: 0.175))
+                    
+                    if !self.isShowingFullDescription {
+                        Button(action: {
+                            self.isShowingFullDescription = true
+                        }) {
+                            Text("more")
+                                .font(.body)
+                                .foregroundColor(.blue)
+                                .background(Color.white)
+                                .padding(.leading, 16)
+                                .background(LinearGradient(gradient: Gradient(colors: [.blur, .white]), startPoint: .leading, endPoint: .trailing))
+                        }
+                    }
+                }
+                .listRowInsets(EdgeInsets(top: 8, leading: 22, bottom: 0, trailing: 22))
+
             }
 
             Section {
                 Text("Information")
                     .font(.headline)
                     .foregroundColor(.primary)
-                    .listRowInsets(EdgeInsets(top: 14, leading: 22, bottom: 8, trailing: 22))
+                    .listRowInsets(EdgeInsets(top: 24, leading: 22, bottom: 8, trailing: 22))
 
                 ForEach(viewModel.detailRowViewModels, id: \.title) {
                     DetailRow(viewModel: $0)
